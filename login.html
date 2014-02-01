@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width">
+        <link href="./css/loginStyling.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <img hidden src="image/loading.gif" >
+        <div id="wrapper" class="wrapper">
+            <img src="./image/wc.old.jpg" alt="" class="bg" />
+            <div id="description" class="description">
+                <div id="name" class="name">RoboQZ</div>
+                <div id="subname" class="subname">Distinguish yourself from conventional video-gamers. This game requires thinking and planning to get across the levels and yes, also solving clues. Surf text, edit sound and search images but internet won't replace your thinking cap this time! Go get it out and gear up.</div>
+            </div>
+            <div id="loginContainer" class="loginContainer">
+                <div id="loginWrapper" class="loginWrapper">
+                    <div id="head" class="head">Sign in with Facebook</div>
+                    <a title="Facebook" onclick="facebookLogin();
+                            return false;">
+                        <img src="./image/active.png" alt="Click Here" class="button" /> 
+                    </a>
+                    <div id="disclaimer" class="disclaimer">The Application will not store your personal information and neither will be posted to your wall. The posts will only be related to this Application.</div>
+                </div>
+            </div>
+        </div>
+        <div id="bottomBar" class="bottomBar">
+            <div id="logo1" class="logo1">
+                <img class="logo1img" src="./image/apogee_logo.png" />
+            </div>
+            <div id="logo2" class="logo2">
+                <img class="logo2img" src="./image/bppc_logo.png" />
+            </div>
+        </div>
+
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId: '570243296401349',
+                    status: true,
+                    cookie: true,
+                    xfbml: true
+                });
+
+
+
+                FB.Event.subscribe('auth.authResponseChange', function(response) {
+                    if (response.status === 'connected') {
+                        $("div.loginWrapper").html('<img class="loading" src="image/loading.gif" >');
+                        window.location.href = "./checkpoint.php";
+                    } else if (response.status === 'not_authorized') {
+                        FB.login();
+                    } else {
+                        FB.login();
+                    }
+                });
+            };
+
+            (function(d) {
+                var js;
+                var id = 'facebook-jssdk';
+                var ref = d.getElementsByTagName('script')[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement('script');
+                js.id = id;
+                js.async = true;
+                js.src = "//connect.facebook.net/en_US/all.js";
+                ref.parentNode.insertBefore(js, ref);
+            }(document));
+
+
+
+            function facebookLogin() {
+                FB.login(function(response) {
+                    if (response.authResponse) {
+                        console.log('Authenticated!');
+                        console.log(response.authResponse.userID);
+                        console.log(response.authResponse.signedRequest);
+                        console.log(response.authResponse.expiresIn);
+                        console.log(response.authResponse.signedRequest);
+                        //window.location.href = "./dashboard.html";
+                    } else {
+                        console.log('User cancelled login or did not fully authorize.');
+                    }
+                },
+                        {
+                            scope: 'email', display: 'popup'
+                        });
+            }
+        </script>
+    </body>
+</html>

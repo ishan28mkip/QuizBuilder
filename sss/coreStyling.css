@@ -1,0 +1,506 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #eaeaea;
+    font-family: 'Open sans';
+}
+.topBar {
+    top: 0px;
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    height: 60px;
+    background: #333;
+    box-shadow:  0px -1px 20px 1px #000;
+}
+.head {
+    font-family: 'Raleway';
+    font-size:40px;
+    position: fixed;
+    text-align: justify;
+    height:60px;
+    line-height: 60px;
+    padding-left:10px;
+    padding-right: 100px;
+    float:left;
+    color:white;
+    border-left: 5px solid #70067b;
+    border-right: 20px solid #70067b;
+    background: #92069d;
+    text-shadow: 1px 1px 1px black;
+}
+.topContainer1 {
+    transition: 0.5s;
+    height:100%;
+    padding: 0% 1%;
+    float:right;
+    border-left: 25px solid #e00c2f;
+    border-right: 10px solid #e00c2f;
+    background: #ff2a4d;
+    cursor: pointer;
+}
+.topContainer1:hover {
+    background:#ddd;
+    box-shadow: 0px 0px 10px #bbb inset;
+}
+.topContainer2 {
+    transition: 0.5s;
+    height:100%;
+    vertical-align: central;
+    padding: 0% 1%;
+    float:right;
+}
+.userPic{
+    width:48px;
+    height: 48px;
+    margin: 6px;
+    float:left;
+    border-radius: 10px;
+}
+.userName{
+    font-family: 'Open sans light';
+    color: white;
+    padding:5px 20px 4px 10px;
+    float:left;
+    height: 60px;
+}
+.fn {
+    font-size: 20px;
+    font-weight: bold;
+}
+.ln {
+    font-size: 14px;    
+    line-height: 20px;
+}
+.powerButton {
+    padding-top: 10%;
+    height:80%;
+}
+
+.button{
+    transition: 0.5s;
+    margin:5% 20%;
+    width:60%;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    text-decoration: none;
+    border-radius:5px;
+    font-family: 'Open sans';
+    font-size: 20px;
+    cursor:pointer;
+    color:white;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.btype1 {
+    background: linear-gradient(to bottom, rgba(66,139,202,1) 0%, rgba(15,109,186,1) 45%, rgba(11,92,158,1) 100%);
+}
+.btype1:hover {
+    background:  linear-gradient(to bottom, rgba(25,110,179,1) 0%, rgba(10,97,168,1) 45%, rgba(11,92,158,1) 100%);
+}
+.btype1:active {
+    background: linear-gradient(to bottom, rgba(20,88,140,1) 0%, rgba(10,97,168,1) 14%, rgba(11,92,158,1) 100%);
+}
+.btype2 {
+    background: linear-gradient(to bottom, #fc0505 10%,#d80404 89%,#b72424 100%);
+}
+.btype2:hover {
+    background: linear-gradient(to bottom, #e20404 37%,#b72424 100%);
+}
+.btype2:active {
+    background: linear-gradient(to bottom, #990303 9%,#b72424 40%);
+}
+.btype3 {
+    background: linear-gradient(to bottom, #8cba19 0%,#579604 65%);
+}
+.btype3:hover {
+    background: linear-gradient(to bottom, #6faa00 0%,#579604 65%);
+}
+.btype3:active {
+    background: linear-gradient(to bottom, #577500 0%,#579604 65%);
+}
+.botBar {
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 0px;
+    position: fixed;
+    background: white;
+    width:100%;
+    height: 25px;
+    box-shadow:  0px 1px 20px 1px #aaa;
+    line-height: 25px;
+    padding: 0px 10px;
+    border-top : 1px solid #bbb;
+}
+.linkWrapper {
+    float: right;
+    margin-right: 14px;
+}
+.fb-likeWrapper{
+    float:left;
+   height:65px;
+   margin: 2px 0px;
+   width:10%;
+}
+// leader Board Page
+
+
+.sidebar {
+    position: fixed;
+    height:100%;
+    width:300px;
+    z-index: 0;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}
+.navBox {
+    width:290px;
+    position : fixed;
+    top:80px;
+    left:0px;
+    height:50px;
+    line-height: 50px;
+    font-size: 25px;
+    vertical-align: central;
+    padding:5px 
+}
+.backIcon{
+    height:40px;
+    padding: 5px;
+}
+.navBox1{
+    font-family: 'open sans';
+    font-weight: 800;
+    color:rgb(62,151,207);
+    float:right;
+    height:50px;
+    line-height: 50px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+.i1{
+    transition: 0.2s;
+    width:287px;
+    float:left;
+    left:0px;
+    font-size:15px;
+    margin: 30px 0px -10px -10px;
+    background: transparent;
+    padding-left: 20px;
+    height:60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.i1Active{
+    background: #eaeaea;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.displayBoard{
+    margin-left: 320px;
+    padding: 80px 0px;
+    z-index: -1;
+    width:800px ;
+    top:80px;
+}
+.result {
+    transition: 0.5s;
+    border:1px #0d6eac solid;
+    border-radius: 10px;
+    margin: 5px;
+    background: #f5f5f5;
+    font-family: 'Open sans';
+    font-weight: 800;
+    width:700px;
+    margin: 15px 20px 15px;
+    border-left:10px solid #0d6eac;
+}
+.starredResult {
+    height:140px;
+}
+.ordinaryResult {
+    height:70px;
+}
+.starredRank {
+    float:left;
+    border:0px solid black;
+    width:120px;
+    height:140px;
+    text-align: right;
+    line-height: 140px;
+    font-size:80px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: crimson;
+}
+.starredPic {
+    float:left;
+    border-radius:10px;
+    height:120px;
+    width:120px;
+    margin: 10px 10px;
+    text-align: center;
+    line-height: 140px;
+    font-size:60px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+.starredInfo {
+    float:left;
+    width:280px;
+    padding: 35px 0px;
+    font-weight: 300;
+}
+.starredName {
+    font-family: 'open sans';
+    font-size:25px;
+    color: #ab4187;
+    text-transform: uppercase;
+}
+.starredJoining {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.starredImp {
+    border-left : 1px dashed dodgerblue;
+    float:left;
+    height:120px;
+    padding: 10px;
+    width:130px;
+    text-align:center;
+    text-transform: uppercase;
+    color:#fe7b23;
+}
+.starredScore {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size:50px;
+    color: rgb(64,171,25);
+}
+.Rank {
+    float:left;
+    border:0px solid black;
+    width:120px;
+    height: 70px;
+    text-align: right;
+    line-height: 70px;
+    font-size:40px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: crimson;
+}
+.Pic {
+    float:left;
+    border-radius:10px;
+    height:60px;
+    width:60px;
+    margin: 5px 10px;
+    text-align: center;
+    line-height: 140px;
+    font-size:60px;
+    font-weight: bold;
+}
+.Info {
+    float:left;
+    width:280px;
+    padding: 10px 0px;
+    height:50px;
+    font-weight: 400;
+}
+.Name {
+    font-size:20px;
+    color: #ab4187;
+    text-transform: uppercase;
+}
+.Imp {
+    border-left : 1px dashed dodgerblue;
+    float:right;
+    height:70px;
+    width:160px;
+    text-align:center;
+    text-transform: uppercase;
+}
+.Score {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size:50px;
+    color: rgb(64,171,25);
+}
+
+// Question Page
+
+.workspace{
+    margin:80px auto 0px;
+    height:82%;
+    width: 1260px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.docks {
+    border-radius: 10px;
+    margin: 5px;
+    background: #f5f5f5;
+    font-family: 'Open sans';
+    font-weight: 800;
+    font-size: 20px;
+}
+.questionWrapper {
+    float:left;
+    width:920px;
+    height:500px;
+    color:#f2780b;
+    padding: 10px;
+    border: 1px solid #f2780b;
+    border-top-width: 10px;
+}
+.current {
+    float:right;
+    width:270px;
+    color: rgb(0,148,174);
+    height:150px;
+    padding: 10px;
+    border: 1px solid rgb(0,148,174);
+    border-top-width: 10px;
+}
+.answerWrapper {
+    float:right;
+    width:270px;
+    height:110px;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(120,63,104);
+    border: 1px solid rgb(120,63,104);
+    border-top-width: 10px;
+}
+.answerCover {
+    border: 1px solid #bbb;
+    margin: 10px 2.5px;
+    width: 260px;
+    height: 34px;
+    border-radius: 5px;
+}
+.answerBox {
+    width:250px;
+    height:30px;
+    margin: 2px 5px;
+    border: 0px;
+    font-size: 25px;
+    outline:none;
+}
+
+// dashboard page
+
+.workspace{
+    margin:80px auto 0px;
+    height:82%;
+    width: 1260px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.docks {
+    border-radius: 10px;
+    margin: 5px;
+    background: #f5f5f5;
+    font-family: 'Open sans';
+    font-weight: 800;
+    font-size: 20px;
+}
+.progress {
+    float:left;
+    width:920px;
+    height:150px;
+    color:rgb(230,62,113);
+    padding: 10px;
+    border: 1px solid rgb(230,62,113);
+    border-top-width: 10px;
+}
+.current {
+    float:right;
+    width:270px;
+    color: rgb(0,148,174);
+    height:150px;
+    padding: 10px;
+    border: 1px solid rgb(0,148,174);
+    border-top-width: 10px;
+}
+.leader{
+    float:left;
+    width:443px;
+    height:100px;
+    padding: 10px;
+    color: rgb(146,186,25);
+    border: 1px solid rgb(146,186,25);
+    border-top-width: 10px;
+}
+.rules{
+    float:left;
+    width:443px;
+    height:100px;
+    color: rgb(254,123,35);
+    padding: 10px;
+    border: 1px solid rgb(254,123,35);
+    border-top-width: 10px;
+}
+.proceed{
+    float:left;
+    width:880px;
+    height:200px;
+}
+.likeWrapper {
+    float:right;
+    width:270px;
+    height:310px;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(120,63,104);
+    border: 1px solid rgb(120,63,104);
+    border-top-width: 10px;
+}
+.fb-like-box {
+    margin: 10px 2px;
+    background: white;
+}
+.currentNode {
+    transition: 0.5s;
+    margin:20px 7px 10px;
+    width:110px;
+    height: 95px;
+    text-align: center;
+    line-height: 42px;
+    text-decoration: none;
+    border-radius:10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black;
+    color:white;
+    float:left;
+    border: 3px solid white;
+    box-shadow: 1px 1px 5px black;
+}
+.currentScore {
+    background: radial-gradient(ellipse at center, rgba(250,0,0,1) 0%, rgba(196,0,0,1) 85%, rgba(181,0,0,1) 100%);
+}
+.currentLevel {
+    background: radial-gradient(ellipse at center, rgba(250,250,0,1) 0%, rgba(255,187,0,1) 85%, rgba(255,170,0,1) 100%);
+}
+.fwd {
+    transition: 0.5s;
+    margin:50px auto;
+    width:300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    text-decoration: none;
+    border-radius:5px;
+    font-family: 'Open sans';
+    font-size: 20px;
+    cursor:pointer;
+    color:white;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
