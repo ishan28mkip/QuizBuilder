@@ -9,7 +9,8 @@ QuizBuilder
 ###Current Implementation status:  
   
 - [x] Design Completed.  
-- [x] Database Structure Decided.  
+- [x] Database Structure Decided.
+- [x] Design Decided  
 
 
 ###Implementation Deadlines:
