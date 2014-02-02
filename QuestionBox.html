@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <style>
+            #div1{
+                width: 500px;
+                height: 200px;
+                font-size: 32px;
+                line-height: 1.2em;
+            }
+        </style>
+        <script>
+            $(function() {
+                n = 1;
+                while (n === 1) {
+                    n = 0;
+                    console.log('adjusted height : ' + $('#div1 .holder').height());
+                    console.log('font-size : ' + parseInt($('#div1').css('font-size')));
+                    if ($('#div1 .holder').outerHeight() > $('#div1').outerHeight()) {
+                        var fz = parseInt($('#div1').css('font-size'));
+                        $('#div1').css({'font-size': fz - 1});
+                        n = 1;
+                    } else {
+                        n = 0;
+                    }
+                    if (parseInt($('#div1').css('font-size')) <= 20) {
+                        $('#div1').css({'font-size': 20});
+                        break;
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="div1" id="div1">
+            <div class="holder">
+                I need to display user entered text into a fixed size div. What i want is for the font size to be automatically adjusted so that the text fills the box as much as possible.
+                I need to display user entered text into a fixed size div. What i want is for the font size to be automatically adjusted so that the text fills the box as much as possible.
+                I need to display user entered text into a fixed size div. What i want is for the font size to be automatically adjusted so that the text fills the box as much as possible.
+                I need to display user entered text into a fixed size div. What i want is for the font size to be automatically adjusted so that the text fills the box as much as possible.
+                I need to display user entered text into a fixed size div. What i want is for the font size to be automatically adjusted so that the text fills the box as much as possible.
+                I need to display user entered text into a fixed size div. What i want is for the font size to be automatically adjusted so that the text fills the box as much as possible.
+                I need to display user entered text into a fixed size div. What i want is for the font size to be automatically adjusted so that the text fills the box as much as possible.
+
+            </div>
+    </body>
+</html>
